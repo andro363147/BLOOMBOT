@@ -1,0 +1,146 @@
+/* ======= ESTILO GENERAL ======= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #9be15d, #00e3ae);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+/* ======= CONTENIDO PRINCIPAL ======= */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5em;
+}
+
+.conexion {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 1em;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+input {
+  padding: 0.6em;
+  width: 60%;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+}
+
+button {
+  background: #006e2e;
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1em;
+}
+
+button:hover {
+  background: #004d1f;
+}
+
+#estado {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: #f2f2f2;
+}
+
+/* ======= TARJETAS DE DATOS ======= */
+.datos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1em;
+  width: 100%;
+  max-width: 700px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1em;
+  border-radius: 15px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.card h2 {
+  margin: 0.5em 0;
+  font-size: 1.1em;
+}
+
+.card p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* ======= BOTÓN DE ACTUALIZAR ======= */
+.btn-actualizar {
+  margin-top: 1.5em;
+  background: #0277bd;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.btn-actualizar:hover {
+  background: #01579b;
+}
+
+/* ======= PIE DE PÁGINA ======= */
+footer {
+  text-align: center;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 0.9em;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-actualizar {
+    width: 100%;
+    max-width: 300px;
+  }
+}

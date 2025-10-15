@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌿 Maceta Inteligente</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>🌱 Maceta Inteligente</h1>
+  </header>
+
+  <main>
+    <section class="conexion">
+      <label for="ip">Dirección IP del dispositivo:</label>
+      <div class="input-group">
+        <input type="text" id="ip" placeholder="Ej: 192.168.1.50">
+        <button id="conectar">Conectar</button>
+      </div>
+      <p id="estado"></p>
+    </section>
+
+    <section class="datos">
+      <div class="card">
+        <h2>🌡️ Temperatura</h2>
+        <p id="temp">-- °C</p>
+      </div>
+
+      <div class="card">
+        <h2>💧 Humedad</h2>
+        <p id="humedad">-- %</p>
+      </div>
+
+      <div class="card">
+        <h2>☀️ Luz Solar</h2>
+        <p id="luz">-- Lux</p>
+      </div>
+
+      <div class="card">
+        <h2>🚰 Nivel de Agua</h2>
+        <p id="agua">-- %</p>
+      </div>
+    </section>
+
+    <button id="actualizar" class="btn-actualizar">Actualizar Datos</button>
+  </main>
+
+  <footer>
+    <p>© 2025 SmartPot Web Monitor</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
